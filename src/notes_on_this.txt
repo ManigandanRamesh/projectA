@@ -1,0 +1,13 @@
+// this.title=title; 
+// this.title is global variable ,and title is a local variable.
+title=filmtitle;
+ // This is similar to this.title=filmtitle,but using this.prefix is not compulsory
+director=filmdirector; 
+// This is similar to this.director=filmdirector,but using this.prefix is not compulsory.
+// as there are no local variables by name ,title or director so,
+//                              here they wil implicitly referred to global variable.
+// Note: if title and director are not globally declare then it will be undeclred variable cannot be resolved to a variable.
+// if the parameter names are similar to the global variable.
+// then there is an ambiquity between the local variable(parameters)and global variable
+// hence this.prefix is used for reffering the global variable
+// title=title will be referring the local variable on both side of the = operator (x=x) self assigning.
